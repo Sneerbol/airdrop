@@ -52,7 +52,7 @@ const superWizard = new WizardScene('super-wizard',
   }
 )
 
-const token = 'token_key';
+const token = '598403579:AAEw2pAZ-GAD2xp2bkvKr0cIuY2kM8n8oXA'; 
 const bot = new Telegraf(token, { polling: true });
 const stage = new Stage([superWizard], { default: 'super-wizard' })
 bot.hears(/eth/i, (ctx) => ctx.reply('Your ETH wallet has saved, wait for the end of ICO!'))
