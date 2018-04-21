@@ -6,6 +6,7 @@ const Markup = require('telegraf/markup')
 const WizardScene = require('telegraf/scenes/wizard')
 const rn = require('random-number');
 const gen = rn.generator({
+  
   min:  11
 , max:  999
 , integer: true
@@ -51,7 +52,9 @@ const superWizard = new WizardScene('super-wizard',
     return ctx.scene.leave()
   }
 )
-
+require('http').createServer().listen(process.env.PORT || 5000).on('request', function(req, res){
+  res.end('')
+})﻿
 const token = '598403579:AAEw2pAZ-GAD2xp2bkvKr0cIuY2kM8n8oXA'; 
 const bot = new Telegraf(token, { polling: true });
 const stage = new Stage([superWizard], { default: 'super-wizard' })
