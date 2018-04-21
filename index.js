@@ -40,7 +40,7 @@ const superWizard = new WizardScene('super-wizard',
     return ctx.wizard.next()
   },
   (ctx) => {
-    ctx.reply('Your referral link is:https://telegram.me/Betex_bot?start='+gen()+word_a+gen()+word_d+gen())
+    ctx.reply('Your referral link is: https://telegram.me/Betex_bot?start='+gen()+word_a+gen()+word_d+gen())
     return ctx.wizard.next()
   },
   (ctx) => {
