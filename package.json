@@ -1,0 +1,25 @@
+{
+  "name": "telega_bot",
+  "version": "1.0.0",
+  "description": "Telega airdrop bot",
+  "main": "index.js",
+  "dependencies": {
+    "random-number": "^0.0.9",
+    "telegraf": "^3.20.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "8.11.1"
+  },
+  "keywords": [
+    "bot",
+    "telega",
+    "airdrop",
+    "ico"
+  ],
+  "author": "Sneerbol",
+  "license": "ISC"
+}
